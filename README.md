@@ -26,3 +26,5 @@ This code defines two functions, `trapezoidal_rule` and `simpsons_rule`, which c
 `simpsons_rule` uses Simpson's rule, which approximates the area under a curve between two points as the area of a parabolic segment that passes through the endpoints and midpoint of the interval. It takes the same four arguments as `trapezoidal_rule`, and additionally checks if the number of subintervals is even. It calculates the step size `h` in the same way as `trapezoidal_rule`, and then calculates the approximate integral as the sum of the function values at the endpoints, midpoints, and quarterpoints of the subintervals, multiplied by appropriate coefficients.
 
 The code then defines a function `f(x)` which returns the value of `x^2 * cos(x)`, sets the limits of integration `a` and `b` to `0` and `pi`, respectively, and sets the number of subintervals `n` to `20`. It calculates the approximate integrals using both methods and prints the results to the console.
+
+
