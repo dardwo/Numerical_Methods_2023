@@ -1,3 +1,5 @@
+import math
+
 def trapezoidal_rule(f, a, b, n):
     h = (b - a) / n
     integral = 0.5 * (f(a) + f(b))
@@ -23,10 +25,10 @@ def simpsons_rule(f, a, b, n):
 
 
 def f(x):
-    return x**2
+    return x**2 * math.cos(x)
 
-a, b = 0, 1
-n = 100
+a, b = 0, math.pi
+n = 20
 
 integral_trapezoidal = trapezoidal_rule(f, a, b, n)
 integral_simpsons = simpsons_rule(f, a, b, n)
